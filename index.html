@@ -6,17 +6,24 @@
 <title>Savan Kanzariya — Backend Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="loading">
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader" aria-label="Loading portfolio">
+  <div class="preloader-panel">
+    <div class="loader-text">Preparing the portfolio experience</div>
+    <div class="loader-line"><span></span></div>
+  </div>
+</div>
 
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo"><span></span>Savan Kanzariya</a>
   <div class="nav-links">
     <a href="#about">About</a>
-    <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
@@ -28,8 +35,8 @@
 <section id="hero">
   <div class="hero-glow"></div>
   <div class="hero-inner">
-    <div>
-      <div class="hero-badge">Available for Work · Surat, Gujarat</div>
+    <div class="hero-content">
+      <div class="hero-badge">Available for Work · Rajkot, Gujarat</div>
       <h1 class="hero-h1">
         Backend<br>
         <span class="accent-word">Developer</span><br>
@@ -43,63 +50,17 @@
         <a href="#contact" class="btn-secondary">Get in Touch</a>
       </div>
     </div>
-    <!-- right card -->
-    <div class="hero-card">
-      <div class="card-label">Core Stack</div>
-      <div class="stack-row">
-        <span class="stack-name">Laravel</span>
-        <div class="stack-bar-wrap">
-          <div class="sbar"><div class="sbar-fill" data-w="92%"></div></div>
-          <span class="sbar-pct">92%</span>
-        </div>
-      </div>
-      <div class="stack-row">
-        <span class="stack-name">PHP 8.x</span>
-        <div class="stack-bar-wrap">
-          <div class="sbar"><div class="sbar-fill" data-w="88%"></div></div>
-          <span class="sbar-pct">88%</span>
-        </div>
-      </div>
-      <div class="stack-row">
-        <span class="stack-name">RESTful APIs</span>
-        <div class="stack-bar-wrap">
-          <div class="sbar"><div class="sbar-fill" data-w="90%"></div></div>
-          <span class="sbar-pct">90%</span>
-        </div>
-      </div>
-      <div class="stack-row">
-        <span class="stack-name">MySQL</span>
-        <div class="stack-bar-wrap">
-          <div class="sbar"><div class="sbar-fill" data-w="85%"></div></div>
-          <span class="sbar-pct">85%</span>
-        </div>
-      </div>
-      <div class="stack-row">
-        <span class="stack-name">CodeIgniter</span>
-        <div class="stack-bar-wrap">
-          <div class="sbar"><div class="sbar-fill" data-w="75%"></div></div>
-          <span class="sbar-pct">75%</span>
-        </div>
-      </div>
-      <div class="stack-row">
-        <span class="stack-name">Livewire</span>
-        <div class="stack-bar-wrap">
-          <div class="sbar"><div class="sbar-fill" data-w="78%"></div></div>
-          <span class="sbar-pct">78%</span>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
 <!-- STATS ROW -->
 <div class="stats-row">
   <div class="stat reveal">
-    <div class="stat-n">1.5+</div>
+    <div class="stat-n">2+</div>
     <div class="stat-l">Years Experience</div>
   </div>
   <div class="stat reveal rd1">
-    <div class="stat-n">10+</div>
+    <div class="stat-n">12+</div>
     <div class="stat-l">Projects Shipped</div>
   </div>
   <div class="stat reveal rd2">
@@ -123,7 +84,7 @@
           I'm <b>Savan Kanzariya</b> — a backend developer who lives in the terminal, thinks in SQL, and ships production Laravel apps.
         </p>
         <p class="about-p">
-          Over 1.5+ years of professional development, I've built robust <b>REST APIs consumed by mobile apps</b>, feature-rich admin dashboards with Filament and Livewire, and normalized database schemas optimized for real traffic.
+          Over 2+ years of professional development, I've built robust <b>REST APIs consumed by mobile apps</b>, feature-rich admin dashboards with Filament and Livewire, and normalized database schemas optimized for real traffic.
         </p>
         <p class="about-p">
           I'm strong with <b>Laravel best practices</b> — service-repository patterns, Eloquent relationships, queue workers, and clean API resources. I also work with <b>CodeIgniter</b> for legacy and lightweight projects, and understand its MVC flow deeply.
@@ -131,7 +92,7 @@
         <p class="about-p">
           My <b>MySQL knowledge</b> goes beyond basic CRUD — indexing strategies, query optimization, complex joins, and schema design for scalability.
         </p>
-        <div class="tag-cloud">
+        <!-- <div class="tag-cloud">
           <span class="chip">Laravel 10/11</span>
           <span class="chip">CodeIgniter</span>
           <span class="chip">PHP 8.x</span>
@@ -141,86 +102,34 @@
           <span class="chip">Sanctum / Passport</span>
           <span class="chip">Livewire</span>
           <span class="chip">Filament</span>
-          <span class="chip">Vue.js</span>
+          <span class="chip">JavaScript</span>
           <span class="chip">Redis</span>
           <span class="chip">Git</span>
-        </div>
+        </div> -->
       </div>
       <div class="about-divider"></div>
       <div class="reveal rd1">
-        <div class="prof-title">Technical Proficiency</div>
-        <div class="prof-rows">
-          <div class="prof-row">
-            <div class="prof-meta"><span class="prof-name">Laravel Framework</span><span class="prof-pct">92%</span></div>
-            <div class="prof-track"><div class="prof-fill pf-purple" data-w="92%"></div></div>
+        <div class="about-focus">
+          <div class="focus-card">
+            <span class="focus-num">01</span>
+            <div>
+              <h3>Backend Systems</h3>
+              <p>Laravel and PHP applications with clean architecture, role-based access, admin panels, and maintainable database structure.</p>
+            </div>
           </div>
-          <div class="prof-row">
-            <div class="prof-meta"><span class="prof-name">RESTful API Design</span><span class="prof-pct">90%</span></div>
-            <div class="prof-track"><div class="prof-fill pf-cyan" data-w="90%"></div></div>
+          <div class="focus-card">
+            <span class="focus-num">02</span>
+            <div>
+              <h3>Mobile App APIs</h3>
+              <p>REST APIs for apps with authentication, order flows, booking flows, tracking, notifications, and secure response handling.</p>
+            </div>
           </div>
-          <div class="prof-row">
-            <div class="prof-meta"><span class="prof-name">PHP 8.x</span><span class="prof-pct">88%</span></div>
-            <div class="prof-track"><div class="prof-fill pf-purple" data-w="88%"></div></div>
-          </div>
-          <div class="prof-row">
-            <div class="prof-meta"><span class="prof-name">MySQL &amp; Query Optimization</span><span class="prof-pct">85%</span></div>
-            <div class="prof-track"><div class="prof-fill pf-amber" data-w="85%"></div></div>
-          </div>
-          <div class="prof-row">
-            <div class="prof-meta"><span class="prof-name">CodeIgniter</span><span class="prof-pct">75%</span></div>
-            <div class="prof-track"><div class="prof-fill pf-green" data-w="75%"></div></div>
-          </div>
-          <div class="prof-row">
-            <div class="prof-meta"><span class="prof-name">Livewire &amp; Alpine.js</span><span class="prof-pct">78%</span></div>
-            <div class="prof-track"><div class="prof-fill pf-cyan" data-w="78%"></div></div>
-          </div>
-          <div class="prof-row">
-            <div class="prof-meta"><span class="prof-name">Vue.js / Inertia</span><span class="prof-pct">72%</span></div>
-            <div class="prof-track"><div class="prof-fill pf-purple" data-w="72%"></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="max-w">
-    <div class="sec-tag reveal">Work History</div>
-    <h2 class="sec-h2 reveal">Where I've <em>shipped things</em></h2>
-    <div class="exp-timeline">
-      <div class="exp-entry reveal">
-        <div class="exp-time-col">
-          <div class="exp-yr">2023 — Now</div>
-          <div class="exp-type-tag">Full-Time</div>
-        </div>
-        <div>
-          <div class="exp-role">Laravel Backend Developer</div>
-          <div class="exp-company">Web Development Agency · Surat, Gujarat</div>
-          <div class="exp-desc">
-            Build and maintain production Laravel applications for diverse clients. Develop RESTful APIs for mobile apps, design multi-role authentication systems, integrate payment gateways (Razorpay, Stripe), and build Filament-powered admin dashboards. Responsible for database design, optimization, and server deployment.
-          </div>
-          <div class="tags-row">
-            <span class="etag">Laravel 10</span><span class="etag">PHP 8.1</span><span class="etag">MySQL</span>
-            <span class="etag">REST API</span><span class="etag">Livewire</span><span class="etag">Filament</span><span class="etag">Sanctum</span>
-          </div>
-        </div>
-      </div>
-      <div class="exp-entry reveal rd1">
-        <div class="exp-time-col">
-          <div class="exp-yr">2022 — 2022</div>
-          <div class="exp-type-tag">Internship</div>
-        </div>
-        <div>
-          <div class="exp-role">PHP / Laravel Intern</div>
-          <div class="exp-company">Software Company · Surat, Gujarat</div>
-          <div class="exp-desc">
-            Started the Laravel journey building CRUD modules, learning Eloquent ORM, Blade templating, and MVC architecture. Contributed to internal tools, wrote migrations, gained experience with form validation, middleware, and authentication scaffolding.
-          </div>
-          <div class="tags-row">
-            <span class="etag">Laravel</span><span class="etag">PHP</span><span class="etag">Blade</span>
-            <span class="etag">Eloquent</span><span class="etag">Bootstrap</span><span class="etag">MySQL</span>
+          <div class="focus-card">
+            <span class="focus-num">03</span>
+            <div>
+              <h3>Integrations</h3>
+              <p>Payment gateways, shipping APIs, third-party services, and practical backend workflows for production projects.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -233,63 +142,109 @@
   <div class="max-w">
     <div class="sec-tag reveal">Selected Work</div>
     <h2 class="sec-h2 reveal">Projects &amp; <em>Applications</em></h2>
-    <p class="proj-intro reveal">Real-world apps covering e-commerce, healthcare, SaaS, and ERP — all built with clean, maintainable code.</p>
-    <div class="proj-grid">
-      <div class="proj-card reveal">
-        <div class="proj-icon pi-purple">🛒</div>
-        <div class="proj-n">01 / PROJECT</div>
-        <div class="proj-name">Multi-Vendor E-Commerce Platform</div>
-        <div class="proj-desc">Marketplace with vendor management, product catalogue, order processing, Razorpay integration, and Filament admin. REST API consumed by a Flutter mobile app.</div>
-        <div class="proj-pills">
-          <span class="pill p-purple">Laravel</span><span class="pill p-cyan">MySQL</span><span class="pill p-amber">REST API</span><span class="pill p-green">Razorpay</span>
-        </div>
-      </div>
-      <div class="proj-card reveal rd1">
-        <div class="proj-icon pi-cyan">🏥</div>
-        <div class="proj-n">02 / PROJECT</div>
-        <div class="proj-name">Hospital Management System</div>
-        <div class="proj-desc">Doctor and patient management with appointment scheduling, prescription records, billing, and role-based access for admin, doctor, and patient roles.</div>
-        <div class="proj-pills">
-          <span class="pill p-purple">Laravel</span><span class="pill p-cyan">Livewire</span><span class="pill p-amber">Sanctum</span>
-        </div>
-      </div>
-      <div class="proj-card reveal rd2">
-        <div class="proj-icon pi-green">📋</div>
-        <div class="proj-n">03 / PROJECT</div>
-        <div class="proj-name">Project Management App</div>
-        <div class="proj-desc">Team collaboration tool with project boards, task assignment, deadline tracking, S3 file uploads, activity logs, and email notifications. SPA with Vue.js + Inertia.</div>
-        <div class="proj-pills">
-          <span class="pill p-purple">Laravel</span><span class="pill p-cyan">Vue.js</span><span class="pill p-amber">Inertia</span><span class="pill p-green">S3</span>
-        </div>
-      </div>
-      <div class="proj-card reveal rd3">
-        <div class="proj-icon pi-amber">🏠</div>
-        <div class="proj-n">04 / PROJECT</div>
-        <div class="proj-name">Real Estate Listing Portal</div>
-        <div class="proj-desc">Property listing and search portal with advanced filters, Google Maps integration, owner/agent dashboards, enquiry management, and optimized image galleries.</div>
-        <div class="proj-pills">
-          <span class="pill p-purple">Laravel</span><span class="pill p-cyan">MySQL</span><span class="pill p-amber">Maps API</span>
-        </div>
-      </div>
-      <div class="proj-card reveal rd4">
-        <div class="proj-icon pi-purple">🎓</div>
-        <div class="proj-n">05 / PROJECT</div>
-        <div class="proj-name">School ERP System</div>
-        <div class="proj-desc">Comprehensive school management covering enrollment, attendance, marks, fee collection, and bulk SMS/email via queue workers. Multi-role access control.</div>
-        <div class="proj-pills">
-          <span class="pill p-purple">Laravel</span><span class="pill p-cyan">Filament</span><span class="pill p-amber">Queues</span>
-        </div>
-      </div>
-      <div class="proj-card reveal rd5">
-        <div class="proj-icon pi-cyan">⚡</div>
-        <div class="proj-n">06 / PROJECT</div>
-        <div class="proj-name">SaaS Subscription Platform</div>
-        <div class="proj-desc">Multi-tenant SaaS with subscription plan management, Stripe billing, webhook handling, feature gating by plan, and clean REST API for third-party integrations.</div>
-        <div class="proj-pills">
-          <span class="pill p-purple">Laravel</span><span class="pill p-cyan">REST API</span><span class="pill p-amber">Stripe</span><span class="pill p-green">Multi-tenant</span>
-        </div>
-      </div>
+    <p class="proj-intro reveal">Production apps, web platforms, payment integrations, delivery flows, service booking systems, and brand websites built with practical backend thinking.</p>
+    <div class="project-toolbar reveal">
+      <div class="project-count" id="projectCount">16 featured projects</div>
     </div>
+    <div class="proj-grid" aria-label="Project grid">
+        <article class="proj-card reveal" data-project="greek-guys">
+          <div class="proj-top"><div class="proj-icon pi-purple">01</div><span class="proj-type">Food Delivery App</span></div>
+          <div class="proj-name">Greek Guys</div>
+          <div class="proj-desc">Food ordering app with mobile-first ordering, offers, rewards, order progress, and payment-ready checkout flow.</div>
+          <div class="proj-pills"><span class="pill p-purple">REST API</span><span class="pill p-cyan">Laravel</span><span class="pill p-amber">Orders</span></div>
+        </article>
+        <article class="proj-card reveal rd1" data-project="door-beaute">
+          <div class="proj-top"><div class="proj-icon pi-cyan">02</div><span class="proj-type">Beauty Marketplace</span></div>
+          <div class="proj-name">Door Beaute</div>
+          <div class="proj-desc">Vendor, store, salon, customer, and delivery-man flow for beauty product delivery and salon bookings.</div>
+          <div class="proj-pills"><span class="pill p-purple">Stripe</span><span class="pill p-green">Razorpay</span><span class="pill p-cyan">Tracking</span></div>
+        </article>
+        <article class="proj-card reveal rd2" data-project="woll-et">
+          <div class="proj-top"><div class="proj-icon pi-green">03</div><span class="proj-type">Card Holding App</span></div>
+          <div class="proj-name">Woll-ET</div>
+          <div class="proj-desc">Digital card holding app focused on keeping card details organized and accessible from mobile devices.</div>
+          <div class="proj-pills"><span class="pill p-purple">Mobile API</span><span class="pill p-cyan">Security</span><span class="pill p-amber">Cards</span></div>
+        </article>
+        <article class="proj-card reveal rd3" data-project="skope">
+          <div class="proj-top"><div class="proj-icon pi-amber">04</div><span class="proj-type">Commerce Website</span></div>
+          <div class="proj-name">Skope</div>
+          <div class="proj-desc">In-progress dealer commerce website where customers buy products and track real-time order status.</div>
+          <div class="proj-pills"><span class="pill p-purple">Shiprocket</span><span class="pill p-green">PhonePe</span><span class="pill p-cyan">Laravel</span></div>
+        </article>
+        <article class="proj-card reveal rd4" data-project="whizof">
+          <div class="proj-top"><div class="proj-icon pi-purple">05</div><span class="proj-type">App &amp; Web</span></div>
+          <div class="proj-name">Whizof</div>
+          <div class="proj-desc">On-demand automotive service platform connecting drivers with nearby technicians and garage professionals.</div>
+          <div class="proj-pills"><span class="pill p-purple">Booking</span><span class="pill p-cyan">Location</span><span class="pill p-amber">Payments</span></div>
+        </article>
+        <article class="proj-card reveal rd5" data-project="hiko">
+          <div class="proj-top"><div class="proj-icon pi-cyan">06</div><span class="proj-type">Static Website</span></div>
+          <div class="proj-name">Hiko Ceramic</div>
+          <div class="proj-desc">Premium porcelain tile website presenting collections, craft process, sustainability, and inquiry flows.</div>
+          <div class="proj-pills"><span class="pill p-purple">HTML</span><span class="pill p-cyan">CSS</span><span class="pill p-amber">Brand Site</span></div>
+        </article>
+        <article class="proj-card reveal" data-project="foodizo">
+          <div class="proj-top"><div class="proj-icon pi-green">07</div><span class="proj-type">Static Masala Website</span></div>
+          <div class="proj-name">Foodizo Group</div>
+          <div class="proj-desc">Export-ready food brand website for dehydrated products, Indian spices, private label, and product collections.</div>
+          <div class="proj-pills"><span class="pill p-purple">Static Site</span><span class="pill p-green">Products</span><span class="pill p-amber">SEO</span></div>
+        </article>
+        <article class="proj-card reveal rd1" data-project="ipo-bit">
+          <div class="proj-top"><div class="proj-icon pi-amber">08</div><span class="proj-type">Informative Website</span></div>
+          <div class="proj-name">Ipo Bit</div>
+          <div class="proj-desc">IPO-focused information website designed for clean content structure, updates, and user-friendly reading.</div>
+          <div class="proj-pills"><span class="pill p-purple">PHP</span><span class="pill p-cyan">Content</span><span class="pill p-amber">Finance</span></div>
+        </article>
+        <article class="proj-card reveal rd2" data-project="uvila">
+          <div class="proj-top"><div class="proj-icon pi-purple">09</div><span class="proj-type">Corporate Website</span></div>
+          <div class="proj-name">Uvila Group</div>
+          <div class="proj-desc">Manufacturer website for uPVC, CPVC, HDPE, agriculture, plumbing, borewell, dealership, and export solutions.</div>
+          <div class="proj-pills"><span class="pill p-purple">Corporate</span><span class="pill p-cyan">Catalog</span><span class="pill p-green">Inquiry</span></div>
+        </article>
+        <article class="proj-card reveal rd3" data-project="ariel">
+          <div class="proj-top"><div class="proj-icon pi-cyan">10</div><span class="proj-type">Static + Dynamic</span></div>
+          <div class="proj-name">Ariel Quartz</div>
+          <div class="proj-desc">Wall clock manufacturer website with collections, custom inquiries, blogs, catalogue downloads, and export content.</div>
+          <div class="proj-pills"><span class="pill p-purple">Dynamic Forms</span><span class="pill p-cyan">Catalog</span><span class="pill p-amber">Blogs</span></div>
+        </article>
+        <article class="proj-card reveal rd4" data-project="pepizo">
+          <div class="proj-top"><div class="proj-icon pi-green">11</div><span class="proj-type">Food Brand Website</span></div>
+          <div class="proj-name">Pepizo Foods</div>
+          <div class="proj-desc">Frozen foods website for fries, hash browns, patties, product categories, export positioning, and inquiry capture.</div>
+          <div class="proj-pills"><span class="pill p-purple">Static Site</span><span class="pill p-green">Products</span><span class="pill p-amber">Inquiry</span></div>
+        </article>
+        <article class="proj-card reveal rd5" data-project="overflo">
+          <div class="proj-top"><div class="proj-icon pi-amber">12</div><span class="proj-type">Service Booking App</span></div>
+          <div class="proj-name">OverFlo Pro</div>
+          <div class="proj-desc">In-progress app and web platform for booking electricians, salon experts, and other workers by location.</div>
+          <div class="proj-pills"><span class="pill p-purple">Stripe</span><span class="pill p-cyan">Booking</span><span class="pill p-green">Services</span></div>
+        </article>
+        <article class="proj-card reveal" data-project="united-oil">
+          <div class="proj-top"><div class="proj-icon pi-purple">13</div><span class="proj-type">Static Website</span></div>
+          <div class="proj-name">United Oil Supply Company</div>
+          <div class="proj-desc">Petroleum supply website focused on bulk storage, distribution services, company profile, and inquiry-led business communication.</div>
+          <div class="proj-pills"><span class="pill p-purple">Static Site</span><span class="pill p-cyan">Corporate</span><span class="pill p-amber">Oil Supply</span></div>
+        </article>
+        <article class="proj-card reveal rd1" data-project="simero">
+          <div class="proj-top"><div class="proj-icon pi-cyan">14</div><span class="proj-type">Static Website</span></div>
+          <div class="proj-name">Simero Ceramics</div>
+          <div class="proj-desc">Luxury vitrified tile website with collection browsing, size-based navigation, catalogue content, and global network sections.</div>
+          <div class="proj-pills"><span class="pill p-purple">Static Site</span><span class="pill p-cyan">Catalog</span><span class="pill p-green">Tiles</span></div>
+        </article>
+        <article class="proj-card reveal rd2" data-project="a2z-cargo">
+          <div class="proj-top"><div class="proj-icon pi-green">15</div><span class="proj-type">Static Website</span></div>
+          <div class="proj-name">A2Z Cargo Care</div>
+          <div class="proj-desc">Cargo care website for fumigation, pest control, cargo lashing, compliance messaging, service pages, and lead capture.</div>
+          <div class="proj-pills"><span class="pill p-purple">Static Site</span><span class="pill p-green">Services</span><span class="pill p-amber">Logistics</span></div>
+        </article>
+        <article class="proj-card reveal rd3" data-project="bluehive">
+          <div class="proj-top"><div class="proj-icon pi-amber">16</div><span class="proj-type">Static Website</span></div>
+          <div class="proj-name">BlueHive Nexim</div>
+          <div class="proj-desc">Rope manufacturer and exporter website with product categories, export messaging, blogs, catalogue, and inquiry sections.</div>
+          <div class="proj-pills"><span class="pill p-purple">Static Site</span><span class="pill p-cyan">Products</span><span class="pill p-green">Export</span></div>
+        </article>
+    </div>
+    <div class="project-pagination reveal" id="projectPagination" aria-label="Project pagination"></div>
   </div>
 </section>
 
@@ -306,30 +261,27 @@
         <div class="sk-item"><span class="sk-dot" style="background:#ff6900"></span>CodeIgniter</div>
         <div class="sk-item"><span class="sk-dot" style="background:#4f9cf9"></span>RESTful APIs</div>
         <div class="sk-item"><span class="sk-dot" style="background:#fbbf24"></span>Laravel Sanctum</div>
-        <div class="sk-item"><span class="sk-dot" style="background:#a78bfa"></span>Passport (OAuth2)</div>
-        <div class="sk-item"><span class="sk-dot" style="background:#68d391"></span>GraphQL</div>
+        
       </div>
       <div class="skill-panel reveal rd1">
         <div class="sp-head"><span class="sp-icon">🗄️</span> Database</div>
         <div class="sk-item"><span class="sk-dot" style="background:#22d3ee"></span>MySQL</div>
-        <div class="sk-item"><span class="sk-dot" style="background:#336791"></span>PostgreSQL</div>
-        <div class="sk-item"><span class="sk-dot" style="background:#4db33d"></span>MongoDB</div>
-        <div class="sk-item"><span class="sk-dot" style="background:#d82c20"></span>Redis</div>
+        
         <div class="sk-item"><span class="sk-dot" style="background:#ff6900"></span>Eloquent ORM</div>
         <div class="sk-item"><span class="sk-dot" style="background:#fbbf24"></span>DB Optimization</div>
         <div class="sk-item"><span class="sk-dot" style="background:#68d391"></span>Query Builder</div>
       </div>
       <div class="skill-panel reveal rd2">
         <div class="sp-head"><span class="sp-icon">🎨</span> Frontend</div>
-        <div class="sk-item"><span class="sk-dot" style="background:#42b883"></span>Vue.js 3</div>
-        <div class="sk-item"><span class="sk-dot" style="background:#fb70a9"></span>Livewire</div>
-        <div class="sk-item"><span class="sk-dot" style="background:#77c1d2"></span>Alpine.js</div>
-        <div class="sk-item"><span class="sk-dot" style="background:#06b6d4"></span>Tailwind CSS</div>
+        <div class="sk-item"><span class="sk-dot" style="background:#e34f26"></span>HTML5</div>
+        <div class="sk-item"><span class="sk-dot" style="background:#1572b6"></span>CSS3</div>
+        <div class="sk-item"><span class="sk-dot" style="background:#f7df1e"></span>JavaScript</div>
+        
         <div class="sk-item"><span class="sk-dot" style="background:#563d7c"></span>Bootstrap 5</div>
         <div class="sk-item"><span class="sk-dot" style="background:#f59e0b"></span>Blade Templates</div>
-        <div class="sk-item"><span class="sk-dot" style="background:#6366f1"></span>Inertia.js</div>
+        <div class="sk-item"><span class="sk-dot" style="background:#06b6d4"></span>Responsive UI</div>
       </div>
-      <div class="skill-panel reveal rd3">
+      <!-- <div class="skill-panel reveal rd3">
         <div class="sp-head"><span class="sp-icon">🚀</span> DevOps</div>
         <div class="sk-item"><span class="sk-dot" style="background:#f05032"></span>Git &amp; GitHub</div>
         <div class="sk-item"><span class="sk-dot" style="background:#2496ed"></span>Docker</div>
@@ -338,7 +290,7 @@
         <div class="sk-item"><span class="sk-dot" style="background:#fbbf24"></span>Postman</div>
         <div class="sk-item"><span class="sk-dot" style="background:#68d391"></span>PHPUnit / Pest</div>
         <div class="sk-item"><span class="sk-dot" style="background:#a78bfa"></span>Horizon / Queues</div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -388,16 +340,15 @@
         </a>
       </div>
       <div class="reveal rd1">
-        <div style="font-family:var(--mono);font-size:0.62rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.4rem">Send a Message</div>
-        <div class="form">
-          <div class="form-row">
-            <div class="ff"><label>First Name</label><input type="text" placeholder="John"/></div>
-            <div class="ff"><label>Last Name</label><input type="text" placeholder="Doe"/></div>
+        <div class="contact-card">
+          <div class="contact-card-kicker">Collaboration Focus</div>
+          <h3>Backend work that moves cleanly from idea to production.</h3>
+          <p>I can help with Laravel APIs, admin dashboards, database design, payment integrations, service booking flows, ecommerce backends, and static or dynamic business websites.</p>
+          <div class="contact-points">
+            <div><span>01</span> API architecture for mobile apps and web platforms</div>
+            <div><span>02</span> Laravel, CodeIgniter, MySQL, and third-party integrations</div>
+            <div><span>03</span> Fast, responsive websites for brands, products, and services</div>
           </div>
-          <div class="ff"><label>Email</label><input type="email" placeholder="john@example.com"/></div>
-          <div class="ff"><label>Subject</label><input type="text" placeholder="Laravel Project — New App"/></div>
-          <div class="ff"><label>Message</label><textarea placeholder="Describe your project, tech requirements, and timeline..."></textarea></div>
-          <button class="btn-submit" onclick="handleSubmit(this)">Send Message →</button>
         </div>
       </div>
     </div>
@@ -406,13 +357,29 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="ft-l"><b>Savan Kanzariya</b> — Backend Developer, Surat © 2024</div>
+  <div class="ft-l"><b>Savan Kanzariya</b> — Backend Developer, Rajkot © 2024</div>
   <div class="ft-r">
     <a href="https://github.com/savankanzariya" target="_blank">GitHub</a>
     <a href="https://linkedin.com/in/savankanzariya" target="_blank">LinkedIn</a>
     <a href="mailto:savankanzariya@email.com">Email</a>
   </div>
 </footer>
+
+<div class="project-modal" id="projectModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" data-close-modal aria-label="Close project details">×</button>
+    <div class="modal-kicker" id="modalType"></div>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <div class="modal-section">
+      <div class="modal-label">Backend / Feature Work</div>
+      <ul id="modalFeatures"></ul>
+    </div>
+    <div class="modal-links" id="modalLinks"></div>
+    <div class="modal-tags" id="modalTags"></div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
