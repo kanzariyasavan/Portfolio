@@ -151,6 +151,55 @@ const projects = {
     features: ['Product category structure for PP ropes, PE/HDPE ropes, twines, and industrial rope applications.', 'Export-focused content for global buyers, distributors, private labeling, and packaging needs.', 'Blog, catalogue, contact, and inquiry sections supporting industrial product discovery.'],
     tags: ['Static Website', 'Products', 'Export', 'Catalog'],
     links: [{ label: 'Website', url: 'https://www.bluehivenexim.com/' }]
+  },
+  aicreator: {
+      title: 'AI Creative Studio',
+      type: 'AI Image Generation SaaS Platform',
+      desc: 'A subscription-based AI platform that generates marketing creatives, product advertisements, travel transformations, jewellery promotions, and festival campaign images using automated prompt workflows.',
+      features: [
+          'Generate AI-powered product advertisements from uploaded product images.',
+          'Place Transformation feature allowing users to upload photos and create destination-themed visuals automatically.',
+          'Jewellery advertisement generation with professional marketing-ready creatives.',
+          'Festival and celebration campaign creator for social media and promotional content.',
+          'Credit-based subscription system with automatic usage tracking and deduction.',
+          'Admin-controlled prompt management, subscription plans, and user credit monitoring.'
+      ],
+      tags: [
+          'AI SaaS',
+          'Image Generation',
+          'Subscription',
+          'Credits',
+          'Laravel API',
+          'Mobile App'
+      ],
+      links: []
+  },
+  artisun: {
+      title: 'Artisun Industries',
+      type: 'PU Wall Panel Manufacturer Website',
+      desc: 'A corporate website for a leading PU wall panel manufacturer featuring product collections, inspiration galleries, export solutions, catalogs, and inquiry-driven customer engagement.',
+      features: [
+          'Showcase of premium PU wall panel collections including stone, brick, feather, wood, and decorative designs.',
+          'Product catalog with specifications, dimensions, applications, and installation information.',
+          'Inspiration gallery and completed projects to highlight real-world interior and exterior applications.',
+          'Export-focused business platform targeting global distributors, dealers, and project buyers.',
+          'Dynamic blog section covering wall panel trends, design ideas, and industry insights.',
+          'Lead generation system with inquiry forms, catalogue downloads, and customer engagement tools.'
+      ],
+      tags: [
+          'PU Wall Panels',
+          'Product Catalog',
+          'Interior Design',
+          'Export',
+          'Corporate Website',
+          'Lead Generation'
+      ],
+      links: [
+          {
+              label: 'Website',
+              url: 'https://www.artisunindustries.com/'
+          }
+      ]
   }
 };
 
